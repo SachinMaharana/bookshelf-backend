@@ -27,4 +27,4 @@ RUN apt-get update -y \
 COPY --from=builder /app/target/release/bookshelf-backend bookshelf-backend
 COPY configuration configuration
 ENV APP_ENVIRONMENT production
-ENTRYPOINT ["./bookshelf-bookend"]
+ENTRYPOINT ["./bookshelf-backend"]

@@ -453,6 +453,7 @@ dependencies = [
  "chrono",
  "config",
  "serde 1.0.118",
+ "serde-aux",
  "sqlx",
  "uuid",
 ]
@@ -1754,6 +1755,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "06c64263859d87aa2eb554587e2d23183398d617427327cf2b3d0ed8c69e4800"
 dependencies = [
  "serde_derive",
+]
+
+[[package]]
+name = "serde-aux"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3a16764e861bd10990815d72767548131b2084079170bedec7cbf5a8ade2daeb"
+dependencies = [
+ "chrono",
+ "serde 1.0.118",
+ "serde_json",
 ]
 
 [[package]]
